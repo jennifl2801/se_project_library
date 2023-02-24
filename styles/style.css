@@ -1,4 +1,11 @@
-/* Add your class here */
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  font-size: 16px;
+  line-height: 20px;
+  margin: auto;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
 
 .header {
   height: 100vh;
@@ -12,16 +19,23 @@
 }
 
 .nav {
-  /* Add flex properties here */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
+  width: 196px;
+  height: 60px;
 }
 
 .nav__links {
+  display: flex;
+  column-gap: 20px;
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   margin-top: 8px;
+  align-items: center;
 }
 
 .nav__link {
@@ -30,24 +44,27 @@
   font-weight: bold;
 }
 
-/* Add the hover state styles for .nav__link here */
-
 .header__title {
+  max-width: 544px;
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
-  margin: 150px 0 0;
+  margin-top: 160px;
 }
 
 .header__description {
+  max-width: 532px;
   font-size: 20px;
   line-height: 30px;
-  margin: 32px 0 0;
+  margin-top: 32px;
 }
 
 .header__image {
-  /* Write styles here */
   z-index: 1;
+  position: absolute;
+  top: 135px;
+  right: 20px;
+  max-width: 636px;
 }
 
 .header__footer {
@@ -67,71 +84,9 @@
   text-decoration: none;
 }
 
-/* Add the hover state styles for .header__link here */
-
 .header__address {
   margin: 0;
   color: #838383;
-}
-
-.staff {
-  padding-top: 100px;
-  padding-bottom: 140px;
-  background-color: #f2f2f2;
-}
-
-.staff__title {
-  text-align: center;
-  font-size: 44px;
-  line-height: 52px;
-  margin: 0 0 24px;
-}
-
-.staff__subtitle {
-  text-align: center;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-  margin: 24px 0 0;
-}
-
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
-
-.card {
-  background-color: #fff;
-  border-radius: 6px;
-  padding: 32px 40px 20px 32px;
-  box-sizing: border-box;
-}
-
-.card__content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.card__title {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.card__text {
-  margin: 20px 0 0;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.card__footer {
-  margin: 0;
-  font-size: 14px;
-  line-height: 20px;
-  color: #838383;
-  /* Auto margins applied on a flex item automatically extend specified margin to occupy the extra space in the flex container */
-  /* In our case, this pushes the element down to the bottom */
-  margin-top: auto;
 }
 
 .events {
@@ -175,6 +130,8 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 .event-info__icon_type_calendar {
@@ -202,186 +159,69 @@
   text-decoration: none;
 }
 
-/* Add the hover state styles for .events__more here */
-
 .events__cover {
-  /* flex-grow: 1;
+  flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 780px;
   max-width: 780px;
-  position: relative; */
+  position: relative;
 }
 
 .events__image {
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 .person {
-  /* position: absolute;
+  position: absolute;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 10px; */
+  gap: 10px;
 }
 
 .person_name_feynman {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  top: -30px;
+  left: 319px;
 }
 
 .person_name_burbidge {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  top: 96px;
+  right: 125px;
 }
 
 .person_name_cannon {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  right: 216px;
+  bottom: 18px;
 }
 
 .person_name_mitchell {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  left: 142px;
+  bottom: 82px;
 }
 
 .person_name_tarter {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  left: 159px;
+  top: 79px;
 }
 
 .person__image {
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 .person__image_size_l {
-  /* width: 140px; */
+  width: 140px;
 }
 
 .person__image_size_m {
-  /* width: 100px; */
+  width: 100px;
 }
 
 .person__image_size_s {
-  /* width: 80px; */
+  width: 80px;
 }
 
 .person__caption {
-  /* text-align: center;
-  font-size: 14px;
-  margin: 0; */
-}
-
-.membership {
-  padding-top: 100px;
-  padding-bottom: 140px;
-  background-color: #f2f2f2;
-}
-
-.membership__title {
-  max-width: 574px;
-  margin: 0 auto;
   text-align: center;
-  font-size: 44px;
-  font-weight: 500;
-  line-height: 52px;
-}
-
-.membership__steps {
-  list-style-type: none;
-  padding: 0;
-  margin: 100px 0 0;
-  /* Add styles */
-}
-
-.step {
-  /* Add styles */
-}
-
-.step__title {
+  font-size: 14px;
   margin: 0;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-}
-
-.step__icon {
-  margin-left: 20px;
-}
-
-.step__description {
-  margin: 10px 0 0;
-}
-
-.about {
-  padding: 100px 80px;
-  background-color: #1f1f1f;
-  color: #fff;
-  overflow: hidden;
-  position: relative;
-  box-sizing: border-box;
-}
-
-.about__title {
-  margin: 0;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 500;
-  z-index: 1;
-}
-
-.about__content {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 400;
-  max-width: 660px;
-}
-
-.about__paragraph {
-  margin: 0;
-}
-
-.about__circle {
-  background-color: #2f80ed;
-  width: 495px;
-  height: 495px;
-  border-radius: 50%;
-}
-
-.footer {
-  box-sizing: border-box;
-}
-
-.footer__columns {
-}
-
-.footer__column_content_hours {
-}
-
-.footer__column_content_social {
-}
-
-.footer__logo {
-}
-
-.footer__list {
-  /* The code below removes the default browser styles for lists */
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer__list-item {
-}
-
-.footer__column-heading {
-}
-
-.footer__column-link {
-  color: white;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
-}
-
-.footer__social-icon {
-}
-
-.footer__copyright {
 }
