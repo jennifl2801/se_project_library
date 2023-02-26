@@ -229,6 +229,7 @@
 .staff {
   padding-top: 100px;
   padding-bottom: 140px;
+  background-image: image("staff_picks_background.jpg");
 }
 
 .staff__title {
@@ -253,11 +254,12 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding-left: 0%;
+  gap: 40px;
 }
 
 .library_image {
   background-position: center;
-  background-size: contain;
+  background-size: auto;
 }
 
 .card {
@@ -324,11 +326,13 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  /* Add styles */
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
 }
 
 .step {
-  /* Add styles */
+  inline-size: 220px;
 }
 
 .step__title {
