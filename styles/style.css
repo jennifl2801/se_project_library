@@ -35,6 +35,7 @@
   list-style: none;
   padding: 0;
   margin-top: 8px;
+  margin-bottom: 0px;
   align-items: center;
 }
 
@@ -53,7 +54,8 @@
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
-  margin-top: 160px;
+  margin-top: 150px;
+  margin-bottom: 0px;
 }
 
 .header__description {
@@ -61,6 +63,7 @@
   font-size: 20px;
   line-height: 30px;
   margin-top: 32px;
+  margin-bottom: 0px;
 }
 
 .header__image {
@@ -103,6 +106,7 @@
   align-items: start;
   justify-content: space-between;
   box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 
 .events__content {
@@ -242,7 +246,7 @@
   padding-top: 100px;
   padding-bottom: 140px;
   background-image: url("../images/staff_picks_background.jpg");
-  background-size: auto;
+  background-size: cover;
 }
 
 .staff__title {
@@ -273,11 +277,6 @@
   gap: 40px;
 }
 
-.library_image {
-  background-position: center;
-  background-size: auto;
-}
-
 .card {
   background-color: #fff;
   border-radius: 6px;
@@ -288,7 +287,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 40px;
   list-style-type: none;
 }
 
@@ -297,7 +295,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: auto;
 }
 
 .card__title {
@@ -343,12 +340,12 @@
   padding: 0;
   margin: 100px 0 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: 40px;
 }
 
 .step {
-  inline-size: 220px;
+  flex-basis: 220px;
   gap: 40px;
 }
 
@@ -377,7 +374,6 @@
   position: relative;
   box-sizing: border-box;
   display: flex;
-  z-index: -1;
 }
 
 .about__title {
@@ -395,14 +391,19 @@
   font-weight: 400;
   max-width: 660px;
   position: relative;
-  left: 120px;
-  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 120px;
   z-index: 1;
 }
 
 .about__paragraph {
   margin: 0;
   padding-bottom: 32px;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0px;
 }
 
 .about__circle {
@@ -418,7 +419,7 @@
 
 .footer {
   box-sizing: border-box;
-  background-color: #000000;
+  background-color: #1f1f1f;
   color: white;
   padding: 60px 102px 60px 80px;
   font-size: 16px;
@@ -437,7 +438,6 @@
 
 .footer__column_content_social {
   margin-left: 100px;
-  margin-right: 0;
 }
 
 .footer__logo {
@@ -455,8 +455,13 @@
   margin-bottom: 16px;
 }
 
+.footer__list-item:last-child {
+  margin-bottom: 0px;
+}
+
 .footer__column-heading {
   margin: 0 0 20px;
+  font-size: 16px;
 }
 
 .footer__column-link {
@@ -475,6 +480,7 @@
 .footer__social-icon {
   width: 16px;
   height: 16px;
+  margin-right: 10px;
 }
 
 .footer__copyright {
