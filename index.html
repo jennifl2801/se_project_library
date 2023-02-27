@@ -17,7 +17,6 @@
             alt="Practicum Library Logo"
             class="logo"
           />
-          <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
               <a class="nav__link">Staff picks</a>
@@ -291,9 +290,49 @@
         </section>
       </main>
       <footer class="footer">
-        <!-- ----------------------------------------------------------------- -->
-        <!--          Don't uncomment until the final project stage            -->
-        <!-- ----------------------------------------------------------------- -->
+        <div class="footer__columns">
+          <div class="footer__column">
+            <img
+              class="footer__logo"
+              src="images/logo_white.png"
+              alt="Practicum Logo"
+            />
+          </div>
+          <div class="footer__column footer__column_content_hours">
+            <h2 class="footer__column-heading">Hours</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">Weekdays: 9am - 8pm</li>
+              <li class="footer__list-item">Weekends: 10am - 6pm</li>
+            </ul>
+          </div>
+          <div class="footer__column footer__column_content_social">
+            <h2 class="footer__column-heading">Social media</h2>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__column-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="images/facebook_white.svg"
+                    alt="Facebook Logo"
+                  />
+                  Facebook
+                </a>
+              </li>
+
+              <li class="footer__list-item">
+                <a class="footer__column-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="images/instagram_white.svg"
+                    alt="Instagram Logo"
+                  />
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">&copy; 2023 Jennika OBrien</p>
       </footer>
     </div>
   </body>

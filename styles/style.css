@@ -229,7 +229,6 @@
 .staff {
   padding-top: 100px;
   padding-bottom: 140px;
-  background-image: image("staff_picks_background.jpg");
 }
 
 .staff__title {
@@ -249,12 +248,15 @@
 
 .staff__content {
   max-width: 760px;
+  margin: auto;
   margin-top: 68px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding-left: 0%;
   gap: 40px;
+  background-image: url("../images/staff_picks_background.jpg");
+  background-size: auto;
 }
 
 .library_image {
@@ -333,6 +335,7 @@
 
 .step {
   inline-size: 220px;
+  gap: 40px;
 }
 
 .step__title {
@@ -359,6 +362,8 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  z-index: -1;
 }
 
 .about__title {
@@ -367,6 +372,7 @@
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
+  max-width: 154px;
 }
 
 .about__content {
@@ -374,10 +380,15 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  position: relative;
+  left: 120px;
+  gap: 32px;
+  z-index: 1;
 }
 
 .about__paragraph {
   margin: 0;
+  padding-bottom: 32px;
 }
 
 .about__circle {
@@ -385,35 +396,53 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  top: -121px;
+  left: -91px;
+  z-index: auto;
 }
 
 .footer {
   box-sizing: border-box;
+  background-color: #000000;
+  color: white;
+  padding: 60px 102px 60px 80px;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
 }
 
 .footer__columns {
+  display: flex;
+  margin-right: auto;
+  flex-wrap: wrap;
 }
 
 .footer__column_content_hours {
+  margin-left: auto;
 }
 
 .footer__column_content_social {
+  margin-left: 100px;
 }
 
 .footer__logo {
+  width: 116px;
+  height: 21px;
 }
 
 .footer__list {
-  /* The code below removes the default browser styles for lists */
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .footer__list-item {
+  margin-bottom: 16px;
 }
 
 .footer__column-heading {
+  margin: 0 0 20px;
 }
 
 .footer__column-link {
@@ -421,10 +450,19 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .footer__social-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.footer__column-link:hover {
+  color: #c1c1c1;
 }
 
 .footer__copyright {
+  margin: 108px 0 0;
 }
