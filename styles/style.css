@@ -340,7 +340,7 @@
   padding: 0;
   margin: 100px 0 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -403,7 +403,7 @@
 }
 
 .about__paragraph:last-child {
-  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .about__circle {
